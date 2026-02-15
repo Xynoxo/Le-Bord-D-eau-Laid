@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="scripts/search-validation.js"></script>
+    <title>Le Bord D'eau Laid - Actualités</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Le Bord D'eau Laid</h1>
+            <p class="tagline">Toute l'actualité au fil de l'eau</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Politique</a></li>
+            <li><a href="#">Économie</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">International</a></li>
+        </ul>
+        <form class="search-form" action="search.html" method="get">
+            <input type="text" name="q" placeholder="Rechercher..." class="search-input">
+            <button type="submit" class="search-btn"></button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <article class="main-article">
+                <img src="style/campbell-jensen-b6hJHLGpPiI-unsplash.jpg" alt="Article principal">
+                <div class="article-content">
+                    <span class="article-category">À la Une</span>
+                    <h2>Séquestré par ses victimes, un cambrioleur porte plainte</h2>
+                    <p class="article-meta">Par Thomas Toketchup | Publié le 25 janvier 2026 à 14h30</p>
+                    <div class="article-text">
+                        <p>Au cœur de la nuit de samedi à dimanche, une tentative de cambriolage aussi absurde qu'inefficace a tourné court dans un immeuble résidentiel calme, lorsqu'un homme de 28 ans a été neutralisé par les occupants du logement qu'il tentait de cambrioler.</p>
+                        
+                        <p>3 minutes après avoir sonné à la porte de l'appartement situé au deuxième étage, l'individu a profité de l'ouverture, provoquée par une confusion avec une livraison, pour tenter de s'introduire de force à l'intérieur. Selon les premiers témoignages, le cambrioleur aurait commencé son opération par une initiative pour le moins surprenante : il aurait sonné à la porte de l'appartement, situé au deuxième étage d'un immeuble résidentiel.</p>
+                        
+                        <p>Kidnappé par sa propre imprudence, le cambrioleur s'est rapidement retrouvé en mauvaise posture face à deux occupants lucides, qui ont immédiatement compris que la situation n'avait rien de normal.</p>
+                        
+                        <p>9 fois sur dix, ce genre d'intrusion tourne mal, mais cette fois la scène a pris une tournure presque surréaliste lorsqu'ils ont aperçu que l'homme était armé uniquement d'un pistolet à billes.</p>
+                        
+                        <p>Zéro résistance réelle n'a été possible de sa part : physiquement faible et désorganisé, il a été rapidement maîtrisé sans difficulté majeure.</p>
+
+                        <p>Quelques instants plus tard, il était attaché à une chaise, bâillonné, et totalement immobilisé dans le salon, sous la surveillance constante des deux victimes.</p>
+
+                        <p>1 longue attente s'en est suivie, durant laquelle l'individu serait resté séquestré pendant près de quatre heures, dans un mélange de stupeur, d'incrédulité et de tension.</p>
+
+                        <p>Bientôt, les forces de l'ordre ont été alertées et une enquête a été ouverte afin de déterminer les circonstances exactes des faits, ainsi que l'éventuelle évasion de l'homme d'un établissement psychiatrique, hypothèse actuellement à l'étude.</p>
+                    </div>
+                    <a href="#" class="more-articles-btn" onclick="loadMore(event)">Plus d'articles</a>
+                </div>
+            </article>
+
+            <div class="secondary-articles" id="moreArticles" style="display: none;">
+                <article class="small-article">
+                    <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400&h=250&fit=crop" alt="Article">
+                    <div class="small-article-content">
+                        <span class="article-category">Sport</span>
+                        <h3>Le club local remporte une victoire historique</h3>
+                        <p>Une performance exceptionnelle qui marque les esprits et promet un avenir radieux pour l'équipe locale.</p>
+                    </div>
+                </article>
+
+                <article class="small-article">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=250&fit=crop" alt="Article">
+                    <div class="small-article-content">
+                        <span class="article-category">Culture</span>
+                        <h3>Festival d'été : la programmation dévoilée</h3>
+                        <p>Les organisateurs ont annoncé une programmation riche et variée qui promet d'attirer les foules cet été.</p>
+                    </div>
+                </article>
+
+                <article class="small-article">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Article">
+                    <div class="small-article-content">
+                        <span class="article-category">Économie</span>
+                        <h3>Les entreprises locales misent sur l'innovation</h3>
+                        <p>De nouvelles startups émergent et dynamisent le tissu économique régional avec des projets ambitieux.</p>
+                    </div>
+                </article>
+
+                <article class="small-article">
+                    <img src="https://images.unsplash.com/photo-1517732306149-e8f829eb588a?w=400&h=250&fit=crop" alt="Article">
+                    <div class="small-article-content">
+                        <span class="article-category">Environnement</span>
+                        <h3>Nouvelle initiative pour la protection du littoral</h3>
+                        <p>Les associations mobilisent les citoyens pour préserver l'écosystème côtier et sensibiliser aux enjeux environnementaux.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="pubs">
+                <img src="style/fat and furious.png" class="Poster" alt="Publicité">
+            </div>
+
+            <div class="pubs">
+                <img src="style/clique ici.jpg" class="appel-whatsapp" alt="Publicité">
+            </div>
+
+            <div class="trending">
+                <h3>Les plus lus</h3>
+                <div class="trending-item">
+                    <h4>Les nouveaux aménagements urbains font débat</h4>
+                    <span>Il y a 2 heures</span>
+                </div>
+                <div class="trending-item">
+                    <h4>Le marché immobilier en pleine mutation</h4>
+                    <span>Il y a 5 heures</span>
+                </div>
+                <div class="trending-item">
+                    <h4>Inauguration du nouveau centre culturel</h4>
+                    <span>Hier</span>
+                </div>
+                <div class="trending-item">
+                    <h4>Les écoles s'adaptent aux nouveaux enjeux</h4>
+                    <span>Il y a 2 jours</span>
+                </div>
+            </div>
+
+            <div id="moreSidebar" style="display: none;">
+                <div class="pubs">
+                    <img src="style/promo.png" class="Promo" alt="Publicité">
+                </div>
+
+                <div class="pubs">
+                    <img src="style/adopte un braqueur.jpg" class="adopte" alt="Publicité">
+                </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Le Bord D'eau Laid - Tous droits réservés</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Mentions légales | Politique de confidentialité | Contact</p>
+    </footer>
+
+    <script>
+        function loadMore(event) {
+            event.preventDefault();
+            
+            // On récupère les deux éléments à afficher/cacher
+            const moreArticles = document.getElementById('moreArticles');
+            const moreSidebar = document.getElementById('moreSidebar'); // Le nouveau bloc d'images
+            const btn = event.target;
+            
+            // On vérifie si les articles sont cachés
+            if (moreArticles.style.display === 'none') {
+                // On AFFICHE tout
+                moreArticles.style.display = 'grid';
+                moreSidebar.style.display = 'block'; // On affiche les images de la sidebar
+                
+                btn.textContent = 'Voir moins d\'articles';
+                moreArticles.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                // On CACHE tout
+                moreArticles.style.display = 'none';
+                moreSidebar.style.display = 'none'; // On cache les images de la sidebar
+                
+                btn.textContent = 'Plus d\'articles';
+            }
+        }
+    </script>
+</body>
+</html>
