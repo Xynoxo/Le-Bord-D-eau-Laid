@@ -326,36 +326,194 @@ footer p + p {
     margin-top: 10px;
 }
 
+/* =====================
+   TABLET (max 1024px)
+===================== */
 @media (max-width: 1024px) {
     .container {
         grid-template-columns: 1fr;
+        padding: 0 15px;
+        margin: 20px auto;
+        gap: 20px;
     }
-    
+
     .secondary-articles {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     nav {
         flex-direction: column;
         height: auto;
-        padding: 15px 0;
+        padding: 10px 0;
+        position: relative;
     }
 
     nav ul {
+        position: static;
+        transform: none;
         flex-wrap: wrap;
-        gap: 15px;
+        justify-content: center;
+        gap: 10px 20px;
+        padding: 10px 15px;
     }
 
     .search-form {
-        margin-right: 0;
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        width: calc(100% - 30px);
+        max-width: 400px;
+    }
+
+    .search-input {
+        width: 100%;
+        flex: 1;
+    }
+
+    .search-input:focus {
+        width: 100%;
+    }
+
+    .main-article img {
+        height: 350px;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
+
+/* =====================
+   MOBILE (max 600px)
+===================== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6em;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        font-size: 0.85em;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav {
+        padding: 8px 0;
+    }
+
+    nav ul {
+        gap: 8px 12px;
+        padding: 8px 10px;
+    }
+
+    nav a {
+        font-size: 0.82em;
+    }
+
+    .search-form {
+        width: calc(100% - 20px);
+        max-width: none;
+        margin: 8px 10px;
+    }
+
+    .search-input {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .container {
+        padding: 0 10px;
+        margin: 15px auto;
+        gap: 15px;
+    }
+
+    /* Cache la sidebar sur mobile pour alléger */
+    .sidebar {
+        display: none;
+    }
+
+    .main-article img {
+        height: 220px;
+    }
+
+    .article-content {
+        padding: 15px;
+    }
+
+    .main-article h2 {
+        font-size: 1.4em;
+        margin: 10px 0;
+    }
+
+    .article-text {
+        font-size: 0.95em;
+        line-height: 1.7;
+    }
+
+    .article-meta {
+        font-size: 0.8em;
+    }
+
+    .more-articles-btn {
+        padding: 12px 25px;
+        font-size: 0.9em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondary-articles {
+        grid-template-columns: 1fr;
+        gap: 15px;
         margin-top: 15px;
+    }
+
+    .small-article img {
+        height: 160px;
+    }
+
+    .small-article-content {
+        padding: 12px;
+    }
+
+    .small-article h3 {
+        font-size: 1em;
+    }
+
+    .small-article p {
+        font-size: 0.88em;
+    }
+
+    /* Articles page */
+    .main-content h2 {
+        font-size: 1.4em !important;
+        margin-bottom: 15px !important;
+    }
+
+    footer {
+        padding: 20px 15px;
+        font-size: 0.85em;
+    }
+
+    .lien-yt {
+        height: auto;
+        padding: 15px;
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+
+    .page-center {
+        min-height: calc(100vh - 150px);
+        padding: 20px;
     }
 }
 
 .Fat-And-Furious {
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .Promo {
@@ -391,16 +549,23 @@ footer p + p {
     margin-bottom: 15px;
 }
 
+.page-center {
+    min-height: calc(100vh - 200px); /* ajuste selon hauteur header+footer */
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+}
+
 .lien-yt {
     background-color: #fff;
     border-radius: 8px;
+    max-width: 600px;
     width: 100%;
-    margin: 0 auto;
     padding: 0 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 60px;
     text-align: center;
 }
